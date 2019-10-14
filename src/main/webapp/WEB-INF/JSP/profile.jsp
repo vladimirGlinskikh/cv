@@ -1,20 +1,11 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./static/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="./static/css/font-awesome.css" rel="stylesheet">
-    <link href="./static/css/timeline.css" rel="stylesheet">
-    <link href="./static/css/app.css" rel="stylesheet">
-</head>
-<body>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-sm-6">
             <div class="panel panel-primary">
                 <div class="panel-body">
-                    <img class="img-responsive" src="media/avatar/photo.jpg"/>
+                    <img class="img-responsive" src="./media/avatar/photo.jpg"/>
                 </div>
             </div>
 
@@ -84,9 +75,3 @@
         </div>
     </div>
 </div>
-
-<script src="./static/js/jquery-3.4.1.js"></script>
-<script src="./static/js/bootstrap.js"></script>
-<script src="./static/js/app.js"></script>
-</body>
-</html>
