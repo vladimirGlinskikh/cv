@@ -7,12 +7,12 @@
     <jsp:include page="../section/css.jsp"/>
 </head>
 <body>
-<header></header>
-<nav></nav>
+<jsp:include page="../section/header.jsp"/>
+<jsp:include page="../section/nav.jsp"/>
 <section class="main">
     <sitemesh:write property='body'/>
 </section>
-<footer></footer>
+<jsp:include page="../section/footer.jsp"/>
 <jsp:include page="../section/js.jsp"/>
 </body>
 </html>
