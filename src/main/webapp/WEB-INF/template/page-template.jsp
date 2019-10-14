@@ -4,11 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./static/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="./static/css/font-awesome.css" rel="stylesheet">
-    <link href="./static/css/timeline.css" rel="stylesheet">
-    <link href="./static/css/app.css" rel="stylesheet">
+    <jsp:include page="../section/css.jsp"/>
 </head>
 <body>
 <header></header>
