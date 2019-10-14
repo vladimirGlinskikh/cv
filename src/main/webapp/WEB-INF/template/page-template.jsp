@@ -13,8 +13,6 @@
     <sitemesh:write property='body'/>
 </section>
 <footer></footer>
-<script src="/static/js/jquery-3.4.1.js"></script>
-<script src="./static/js/bootstrap.js"></script>
-<script src="./static/js/app.js"></script>
+<jsp:include page="../section/js.jsp"/>
 </body>
 </html>
