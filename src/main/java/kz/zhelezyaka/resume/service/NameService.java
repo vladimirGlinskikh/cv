@@ -1,11 +1,6 @@
 package kz.zhelezyaka.resume.service;
 
-public class NameService {
-    public static NameService getInstance() {
-        return new NameService();
-    }
+public interface NameService {
 
-    public String convertName(String name) {
-        return name.toUpperCase();
-    }
+    String convertName(String name);
 }
