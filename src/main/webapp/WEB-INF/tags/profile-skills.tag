@@ -19,7 +19,7 @@
 				</tr>
 				<tr>
 					<td>DBMS</td>
-					<td>Postgresql, Mysql</td>
+					<td>PostgreSQL, MySQL</td>
 				</tr>
 				<tr>
 					<td>Web</td>
