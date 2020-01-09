@@ -20,4 +20,9 @@ public class PublicDataController {
         model.addAttribute("fullName", fullName);
         return "profile";
     }
+
+    @RequestMapping(value = "/error", method = RequestMethod.GET)
+    public String getError(){
+        return "error";
+    }
 }
