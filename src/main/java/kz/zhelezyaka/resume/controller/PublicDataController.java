@@ -1,5 +1,7 @@
 package kz.zhelezyaka.resume.controller;
 
+import kz.zhelezyaka.resume.entity.Profile;
+import kz.zhelezyaka.resume.repository.storage.ProfileRepository;
 import kz.zhelezyaka.resume.service.NameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,17 +14,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class PublicDataController {
 
     @Autowired
-    private NameService nameService;
+    private ProfileRepository profileRepository;
 
     @RequestMapping(value = "/{uid}", method = RequestMethod.GET)
     public String getProfile(@PathVariable("uid") String uid, Model model) {
-        String fullName = nameService.convertName(uid);
-        model.addAttribute("fullName", fullName);
+        Profile profile = profileRepository.findByUid(uid);
+//        if (profile == null) {
+//            return "profile_not_found";
+//        }
+        model.addAttribute("profile", profile);
         return "profile";
     }
 
     @RequestMapping(value = "/error", method = RequestMethod.GET)
-    public String getError(){
+    public String getError() {
         return "error";
     }
 }
