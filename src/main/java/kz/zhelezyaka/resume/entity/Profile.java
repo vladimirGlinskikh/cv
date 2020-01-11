@@ -4,7 +4,6 @@ import org.joda.time.LocalDate;
 import org.joda.time.Years;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Timestamp;
@@ -23,7 +22,6 @@ public class Profile extends AbstractEntity<Long> implements Serializable {
     private Date birthDay;
 
     @Column
-    @NotNull
     private String city;
 
     @Column
