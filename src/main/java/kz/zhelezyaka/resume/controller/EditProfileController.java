@@ -21,14 +21,18 @@ public class EditProfileController {
     @Autowired
     private ProfileRepository profileRepository;
 
-    @RequestMapping(value="/edit", method=RequestMethod.GET)
-    public String getEditProfile(){
+    @RequestMapping(value = "/edit", method = RequestMethod.GET)
+    public String getEditProfile() {
         return "edit";
     }
 
     @RequestMapping(value = "/edit/skills", method = RequestMethod.GET)
     public String getEditTechSkills(Model model) {
-        model.addAttribute("skillForm", new SkillForm(profileRepository.findOne(1L).getSkills()));
+        try {
+            model.addAttribute("skillForm", new SkillForm(profileRepository.findOne(1L).getSkills()));
+        } catch (NullPointerException e) {
+            e.getStackTrace();
+        }
         return gotoSkillsJSP(model);
     }
 
@@ -41,7 +45,7 @@ public class EditProfileController {
         return "redirect:/profile";
     }
 
-    private String gotoSkillsJSP(Model model){
+    private String gotoSkillsJSP(Model model) {
         model.addAttribute("skillCategories", skillCategoryRepository.findAll(new Sort("id")));
         return "/edit/skills";
     }

@@ -11,7 +11,6 @@
             <div class="col-xs-5 col-sm-4 col-md-2 text-center"><strong>Категория</strong></div>
             <div class="col-xs-7 col-sm-8 col-md-10 text-center"><strong>Фреймворк и технология</strong></div>
         </div>
-        <%--@elvariable id="skillForm" type="kz.zhelezyaka.resume.form.SkillForm"--%>
         <form:form action="/edit/skills" method="post" commandName="skillForm">
             <div id="ui-block-container">
                 <c:forEach var="skill" items="${skillForm.items }" varStatus="status">
