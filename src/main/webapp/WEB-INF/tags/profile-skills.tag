@@ -1,4 +1,5 @@
 <%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
+<%@ taglib prefix="cv" tagdir="/WEB-INF/tags" %>
 
 <div class="panel panel-primary">
 	<div class="panel-heading">

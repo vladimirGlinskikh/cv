@@ -1,5 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="cv" tagdir="/WEB-INF/tags" %>
+<%@ page contentType="text/html;charset=UTF-8" trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="cv" tagdir="/WEB-INF/tags" %>
+
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-sm-6">

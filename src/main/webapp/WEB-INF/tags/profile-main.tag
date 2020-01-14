@@ -1,4 +1,5 @@
 <%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
+<%@ taglib prefix="cv" tagdir="/WEB-INF/tags" %>
 
 <div class="panel panel-primary">
 	<a href="edit"><img class="img-responsive photo" src="./media/avatar/photo.jpg" alt="photo"></a>
